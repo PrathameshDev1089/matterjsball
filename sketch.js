@@ -40,11 +40,14 @@ function setup() {
 function draw() {
   rectMode(CENTER);
   background(0);
+  Engine.update(engine);
   
   ellipse(ball.position.x, ball.position.y, 10);
 
   groundObj.show();
   leftSide.show();
+	
+	
 
   drawSprites();
  
